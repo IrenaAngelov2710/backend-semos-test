@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Courses</title>
+</head>
+<body>
+    <h1>All Courses</h1>
+    <ul>
+        <% courses.forEach(course => { %>
+            <li>
+                <strong>Name: </strong> <%= course.name %> 
+                <br/>
+                <strong>Address: </strong><%= course.address %> 
+                <br/>
+                <strong>Area: </strong> <%= course.area %>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
